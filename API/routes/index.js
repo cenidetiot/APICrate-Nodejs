@@ -9,7 +9,7 @@
     res.json({ message: 'Welcome to CRATEDB-QuamtumLeap API' })
   });
   //EXAMPLE-SIMPLE GET REQUEST: http://localhost:3700/api/locationDate?date=2018-02-08
-  app.get('/locationDate/:date', deviceController.read_devicesByDate);
+  //app.get('/locationDate/:date', deviceController.read_devicesByDate);
   //EXAMPLE-SIMPLE GET REQUEST: http://localhost:3700/api/locationOwnerDate?owner=41&date=2018-02-08
   app.get('/locationOwnerDate', deviceController.read_deviceByOwner);
   //EXAMPLE-SIMPLE GET REQUEST: http://localhost:3700/api/locationDeviceDate?idDevice=Device_Smartphone_b0234f7b3f365bf3&date=2018-02-08
