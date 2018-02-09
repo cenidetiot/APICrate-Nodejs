@@ -12,13 +12,6 @@ exports.read_devicesByDate = function(req, res) {
     .then((result) => {
         console.log('Success', result.json, result.rowcount)
         entidad = result.json;
-        /*let time_index = entidad[0]['time_index'];
-        construct a moment object with UTC-based input
-        var m = moment.tz(time_index,'America/Mexico_City');
-        format output however you desire
-        var dateFormated = m.format();
-        console.log(dateFormated);
-        entidad[0]['time_index'] = dateFormated;*/
         res.status(200).json(entidad);
     })
     .catch((err)=>{
@@ -34,14 +27,6 @@ exports.read_deviceByIdDevice = function(req, res) {
     .then((result) => {
         console.log('Success', result.json, result.rowcount)
         entidad = result.json;
-        /*let time_index = entidad[0]['time_index'];
-        construct a moment object with UTC-based input
-        var m = moment.tz(time_index,'America/Mexico_City');
-        format output however you desire
-        var dateFormated = m.format();
-        console.log(dateFormated);
-        entidad[0]['time_index'] = dateFormated;
-        res.status(200).json(entidad);*/
     })
     .catch((err)=>{
         res.status(400).send(err);
@@ -57,13 +42,6 @@ exports.read_deviceByOwner = function(req, res) {
         console.log('Success', result.json, result.rowcount)
         entidad = result.json;
         let time_index = entidad[0]['time_index'];
-        /*construct a moment object with UTC-based input
-        var m = moment.tz(time_index,'America/Mexico_City');
-        format output however you desire
-        var dateFormated = m.format();
-        console.log(dateFormated);
-        entidad[0]['time_index'] = dateFormated;
-        res.status(200).json(entidad);*/
     })
     .catch((err)=>{
         res.status(400).send(err);
@@ -79,14 +57,6 @@ exports.read_deviceByOwnerDateTime= function(req, res) {
     .then((result) => {
         console.log('Success', result.json, result.rowcount)
         entidad = result.json;
-        /*let time_index = entidad[0]['time_index'];
-        construct a moment object with UTC-based input
-        var m = moment.tz(time_index,'America/Mexico_City');
-        format output however you desire
-        var dateFormated = m.format();
-        console.log(dateFormated);
-        entidad[0]['time_index'] = dateFormated;
-        res.status(200).json(entidad);*/
     })
     .catch((err)=>{
         res.status(400).send(err);
@@ -102,13 +72,6 @@ exports.read_deviceByDeviceDateTime= function(req, res) {
     .then((result) => {
         console.log('Success', result.json, result.rowcount)
         entidad = result.json;
-        /*let time_index = entidad[0]['time_index'];
-        construct a moment object with UTC-based input
-        var m = moment.tz(time_index,'America/Mexico_City');
-        format output however you desire
-        var dateFormated = m.format();
-        console.log(dateFormated);
-        entidad[0]['time_index'] = dateFormated;*/
         res.status(200).json(entidad);
     })
     .catch((err)=>{

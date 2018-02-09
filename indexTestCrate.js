@@ -22,7 +22,15 @@ crate.execute("select * from etdevice where entity_id=? and date_format(time_ind
 		console.log(s);
 		//EXAMPPLE 2 MOMENT.JS
 		//var m = moment.tz(time_index,'America/Mexico_City');
-        //var dateFormated = m.format();
+		//var dateFormated = m.format();
+		
+		/*let time_index = entidad[0]['time_index'];
+        construct a moment object with UTC-based input
+        var m = moment.tz(time_index,'America/Mexico_City');
+        format output however you desire
+        var dateFormated = m.format();
+        console.log(dateFormated);
+        entidad[0]['time_index'] = dateFormated;*/
 	}
 })
 .catch((err)=>{
