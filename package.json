@@ -1,0 +1,27 @@
+{
+  "name": "nodejscratedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "crate",
+    "example"
+  ],
+  "author": "Blanca Haidee Onofre Ramirez <haideeram97@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
+    "node-crate": "^2.0.3"
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.12"
+  }
+}
