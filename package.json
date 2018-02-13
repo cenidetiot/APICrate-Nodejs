@@ -17,11 +17,10 @@
     "cors": "^2.8.4",
     "moment": "^2.20.1",
     "moment-timezone": "^0.5.14",
-    "node-crate": "^2.0.3"
+    "node-crate": "^2.0.3",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "express": "^4.16.2",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.14.12"
   }
 }
