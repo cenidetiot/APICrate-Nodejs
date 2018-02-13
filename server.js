@@ -1,6 +1,6 @@
 'use strict';
 
-var express     = require('express')
+var express     = require('express');
 var app         = express();
 var routes      = require('./API/routes/index'); //importing the routes
 var config      = require('./config/config'); // get our config file
@@ -20,11 +20,11 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 //CORS
-app.use(cors())
+app.use(cors());
 
 // ROUTES FOR OUR API
 // =============================================================================
-app.use('/api', routes)
+app.use('/api', routes);
 
 //Middleware to catch and handle a 404 error
 app.use(function(req, res) {
