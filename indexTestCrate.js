@@ -1,11 +1,11 @@
 var crate = require('node-crate');
-crate.connect('http://207.249.127.218:4200');
+crate.connect('http://130.206.113.226:4200');
 var moment = require('moment');
 var momentTimeZone = require('moment-timezone');
 
 var arrayDates = [];
 var arrayDatesConverted = [];
-crate.execute("select * from etdevice where entity_id=? and date_format(time_index) like ? order by date_format(time_index) desc limit 10",['Device_Smartphone_b0234f7b3f365bf3', '2018-02-09%'])
+crate.execute("select * from etdevice where entity_id=? and date_format(time_index) like ? order by date_format(time_index) desc limit 1",['Device_Smartphone_7a85d9df7209b8bc', '2018-02-12%'])
 .then((res) => {
 	console.log('Success', res.json, res.rowcount)
 	entidades = res.json;

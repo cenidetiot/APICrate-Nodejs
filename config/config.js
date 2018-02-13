@@ -1,3 +1,3 @@
 module.exports = {
-    'crateDBAdmin' : 'http://207.249.127.218:4200'
+    'crateDBAdmin' : 'http://130.206.113.226:4200'
 }
